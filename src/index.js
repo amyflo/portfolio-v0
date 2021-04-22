@@ -7,7 +7,8 @@ import Resume from "./Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
-import Lenovo from './Lenovo';
+import Lenovo from "./Lenovo";
+
 // import About from './components/about'
 
 ReactDOM.render(

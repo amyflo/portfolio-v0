@@ -5,7 +5,7 @@ const PortfolioHero = (props) => (
   <Row>
     <Col>
       <h1>{props.Headline}</h1>
-      <h5>{props.Subheader}</h5>
+      <p>{props.Subheader}</p>
       <Image
         className="my-4"
         src={props.ImageLink}

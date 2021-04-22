@@ -1,22 +1,16 @@
 @import url("http://fonts.googleapis.com/css?family=Inter");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
 
-body, .card{
+body,
+.card,
+.jumbotron,
+nav,
+footer {
   font-family: "Inter", sans-serif !important;
   border: none !important;
-}
-
-.jumbotron, nav, footer{
   background-color: black !important;
-  color: #f1f3f4 !important;
+  color: #989ca2 !important;
   border-radius: 0px !important;
-}
-
-.nav-link:hover{
-  color: #f1f3f4 !important;
-  transform: translate3D(0,-1px,0) scale(1.03) !important;
-  transition:cubic-bezier(1, 0, 0, 1) !important;
-  transition: all .3s ease;
 }
 
 .custom-btn {
@@ -24,36 +18,32 @@ body, .card{
   color: #bdc1c6 !important;
   border-color: #bdc1c6 !important;
   border-radius: 0px !important;
-  padding: 5px 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   margin: 3px;
 }
 
 .custom-btn:hover {
-  color: white !important;
-  background: #bdc1c620 !important;
-  transition: all .3s ease;
+  color: #fac92a !important;
+  background: #fac92a20 !important;
+  transition: all 0.3s ease;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 700;
+h1, h2, h3, h4, h5 {
+  padding-top: 20px;
+  line-height:1.5 !important;
+  font-family: 'Noto Serif KR', serif;
 }
 
-.card{
-  transition: ease-in 0.5s ease !important;
+h1, h2, h3{
+  color: #fac92a !important;
+
 }
 
-.card:hover{
-  transform: translate3D(0,-10px,0) !important;
-  transition: all 0.5s ease !important;
-  cursor: pointer;
+h4, h5, h6{
+  color: #f1f3f4 !important;
 }
 
-
-p {
+p{
   font-size: 1.15rem;
 }
 
@@ -61,24 +51,75 @@ p2 {
   font-size: 0.9 em;
 }
 
+.card {
+  transition: ease-in 0.5s ease !important;
+}
+
+.card:hover {
+  transform: translate3D(0, -10px, 0) !important;
+  transition: all 0.5s ease !important;
+  cursor: pointer;
+}
+
+.row{
+  margin-top: 20px !important;
+}
+
 .no-bullet {
   list-style-type: none;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #fac92a !important;
 }
 
-.imageNum{
-  color:#bdc1c6;
+.imageNum {
+  color: #fac92a !important;
   font-weight: 500;
 }
 
 ::selection {
-  background: #fee71550; /* WebKit/Blink Browsers */
-
+  background: #ffffff70;
+  color: black;
 }
 ::-moz-selection {
-  background: #fee71550; /* Gecko Browsers */
+  background: #ffffff70;
+  color: black;
+}
+
+blockquote, .blockquote-footer{
+  background-color: #fac92a30;
+  border-left: 4px solid#fac92a;
+  padding: 20px !important;
+  font-family: 'Noto Serif KR', serif;
+  color: #f1f3f4 !important;
+}
+
+.dataNum{
+  color: #fac92a !important;
+  font-weight: bold;
+}
+
+cite{
+  color: #989ca2 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.dataquote{
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Noto Serif KR', serif;
+  color: #e3e3e3 !important;
+}
+
+.textLink{
+  color: #fac92a !important;
+}
+
+.FooterLink:hover, .nav-link:hover{
+  cursor: pointer !important;
+  color: #fac92a !important;
 }

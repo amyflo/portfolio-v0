@@ -1,13 +1,18 @@
 import React from "react";
 import ResumeItem from "./components/ResumeItem";
-import { Container, Button, Row, Col } from "react-bootstrap";
+import Fade from "react-reveal";
+import Footer from "./components/Footer";
+import { Container, Button } from "react-bootstrap";
 
 const Resume = () => (
+  <div>
   <Container>
+  <Fade top>
     <h1>Resume</h1>
     <Button className="custom-btn" href="">
       Download my Resume
     </Button>
+    </Fade>
     <ResumeItem
       heading="Education"
       title="Stanford University / Expected Graduation: June 2024 "
@@ -73,6 +78,8 @@ const Resume = () => (
       </p>
     </ResumeItem>
   </Container>
+  <Footer/>
+  </div>
 );
 
 export default Resume;

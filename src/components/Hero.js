@@ -1,29 +1,34 @@
 import React from "react";
-import { Jumbotron, Button, Image, Container, Row, Col } from "react-bootstrap";
+import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap";
+import Fade from "react-reveal";
 import "./style.css";
 
 const Hero = (props) => (
-  <div>
+  <Fade top>
     <Jumbotron bg="dark" variant="dark">
       <Container>
         <Row>
           <Col>
-            <h5>MY MANIFESTO</h5>
+            <p>MY MANIFESTO</p>
             <h1>
               I push my pixels where they can count the most, for the people who
               need a voice the most.
             </h1>
-            <Button className="custom-btn" href={props.ButtonLink}>
-              About me
-            </Button>
-            <Button className="custom-btn" href={props.ButtonLink}>
-              Meet with me
-            </Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <Button className="custom-btn" href={props.ButtonLink}>
+            Get in touch
+          </Button>{' '}
+          <Button className="custom-btn" href={props.ButtonLink}>
+            Meet with me
+          </Button>
           </Col>
         </Row>
       </Container>
     </Jumbotron>
-  </div>
+  </Fade>
 );
 
 export default Hero;

@@ -1,16 +1,18 @@
 import React from "react";
-import { Col } from "react-bootstrap";
 import FigureImage from "react-bootstrap/esm/FigureImage";
 import FigureCaption from "react-bootstrap/esm/FigureCaption";
+import Fade from "react-reveal/Fade";
 
 const Figure = (props) => (
-  <Col md={true}>
+  <Fade bottom>
+  <div className="my-3">
     <FigureImage src={props.ImageLink} alt={props.ImageAlt} />
     <FigureCaption>
       <span class="imageNum">{props.ImageNum}</span>
       {" " + props.ImageCaption}
     </FigureCaption>
-  </Col>
+  </div>
+  </Fade>
 );
 
 export default Figure;
